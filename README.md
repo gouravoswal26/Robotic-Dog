@@ -1,5 +1,22 @@
 # 🐕 Robotic Dog (Quadruped Robot)
+# 🐕 Robotic Dog (Quadruped Robot)
 
+> **Project Status:** 🚧 Under Active Development
+>
+> This project is currently being developed and tested on an ESP32 platform. Once the software and hardware are fully validated, it will be migrated to an STM32 platform.
+
+---
+
+## 📸 Robot Prototype
+
+<p align="center">
+  <img src="Images/front.jpeg" width="700">
+</p>
+
+<p align="center">
+  <img src="Images/side.jpeg" width="340">
+  <img src="Images/back.jpeg" width="340">
+</p>
 A 12-DOF Quadruped Robot designed for stable walking, balancing, and autonomous navigation using multiple sensors. This project combines embedded systems, robotics, inverse kinematics, and sensor fusion to create a versatile robotic platform.
 
 ---
