@@ -49,7 +49,22 @@ The robot uses multiple sensors along with inverse kinematics to generate smooth
 - 🚧 Modular Software Architecture
 
 ---
+## 📋 Specifications
 
+| Feature | Specification |
+|----------|--------------|
+| Robot Type | Quadruped Robot |
+| DOF | 12 |
+| Controller | ESP32 (Current) |
+| Future Controller | STM32 |
+| Servo Driver | PCA9685 |
+| Actuators | 12 Servo Motors |
+| IMU | MPU6500 ×2 |
+| ToF Sensor | VL53L0X ×2 |
+| Ultrasonic | HC-SR04 ×2 |
+| Foot Sensors | FSR ×4 |
+| Battery | 3S LiPo |
+---
 # Hardware
 
 ## Controller
