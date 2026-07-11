@@ -1,4 +1,4 @@
-# 🐕 Robotic Dog (Quadruped Robot)
+
 # 🐕 Robotic Dog (Quadruped Robot)
 
 > **Project Status:** 🚧 Under Active Development
