@@ -73,24 +73,6 @@ The objective of this project is to design and build a modular quadruped robot c
 
 ---
 
-# 📂 Repository Structure
-
-```
-Robotic-Dog/
-│
-├── CAD/
-├── Circuit_Diagrams/
-├── Code/
-│   └── ESP32/
-├── Datasheets/
-├── Documentation/
-├── Images/
-├── Videos/
-└── README.md
-```
-
----
-
 # 📁 Repository Contents
 
 ## CAD
