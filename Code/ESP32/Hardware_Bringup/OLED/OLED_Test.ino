@@ -8,8 +8,7 @@
  * ------------------------------------------------------------
  * Purpose:
  * Verify OLED display initialization and display
- * important system information during hardware bring-up.
- *
+ * important system information during hardware bring-up
  * Development Stage:
  * Hardware Bring-up
  * ------------------------------------------------------------
