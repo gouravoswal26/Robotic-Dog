@@ -1,0 +1,54 @@
+[0.000000] (-) TimerEvent: {}
+[0.000538] (robot_dog) JobQueued: {'identifier': 'robot_dog', 'dependencies': OrderedDict()}
+[0.000797] (robot_dog) JobStarted: {'identifier': 'robot_dog'}
+[0.099773] (-) TimerEvent: {}
+[0.199988] (-) TimerEvent: {}
+[0.300199] (-) TimerEvent: {}
+[0.400428] (-) TimerEvent: {}
+[0.500634] (-) TimerEvent: {}
+[0.600811] (-) TimerEvent: {}
+[0.700991] (-) TimerEvent: {}
+[0.801157] (-) TimerEvent: {}
+[0.901352] (-) TimerEvent: {}
+[1.001513] (-) TimerEvent: {}
+[1.101662] (-) TimerEvent: {}
+[1.201803] (-) TimerEvent: {}
+[1.301956] (-) TimerEvent: {}
+[1.402122] (-) TimerEvent: {}
+[1.502230] (-) TimerEvent: {}
+[1.602387] (-) TimerEvent: {}
+[1.702542] (-) TimerEvent: {}
+[1.802690] (-) TimerEvent: {}
+[1.837985] (robot_dog) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/daksh/ros2_dog/build/robot_dog/build', '--no-deps', 'symlink_data'], 'cwd': '/home/daksh/ros2_dog/build/robot_dog', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:::setuptools.installer,ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install', 'CCACHE_TEMPDIR': '/tmp/ccache', 'GZ_SIM_RESOURCE_PATH': '/home/daksh/cognipilot/cranium/install/dream_world/share/dream_world/worlds:/home/daksh/cognipilot/cranium/install/dream_world/share/dream_world/models:/home/daksh/cognipilot/cranium/install/b3rb_gz_resource/share/b3rb_gz_resource/models', 'USER': 'daksh', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/daksh/cognipilot/cranium/install/synapse_tinyframe/lib:/home/daksh/cognipilot/cranium/install/synapse_protobuf/lib:/home/daksh/cognipilot/cranium/install/synapse_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/daksh', 'OLDPWD': '/home/daksh/ros2_dog/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge:appmenu-gtk-module', 'MANAGERPID': '1856', 'SYSTEMD_EXEC_PID': '2234', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2767', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/daksh/cognipilot/electrode/install:/home/daksh/cognipilot/cranium/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'daksh', 'JOURNAL_STREAM': '8:19282', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'daksh', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/daksh/cognipilot/ws/cerebri/install/bin:/opt/ros/humble/bin:/home/daksh/.local/bin:/home/daksh/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/daksh-OMEN-by-HP-Gaming-Laptop-16-wf1xxx:@/tmp/.ICE-unix/2011,unix/daksh-OMEN-by-HP-Gaming-Laptop-16-wf1xxx:/tmp/.ICE-unix/2011', 'INVOCATION_ID': '4b7a619aa9b94baf90500e3588b251b7', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.422VT3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/daksh/cognipilot/cranium/install/synapse_ros:/home/daksh/cognipilot/cranium/install/synapse_gz:/home/daksh/cognipilot/cranium/install/synapse_tinyframe:/home/daksh/cognipilot/cranium/install/synapse_protobuf:/home/daksh/cognipilot/cranium/install/corti:/home/daksh/cognipilot/cranium/install/b3rb_ros_line_follower:/home/daksh/cognipilot/cranium/install/synapse_msgs:/home/daksh/cognipilot/cranium/install/dream_world:/home/daksh/cognipilot/cranium/install/cerebri_bringup:/home/daksh/cognipilot/cranium/install/b3rb_simulator:/home/daksh/cognipilot/cranium/install/b3rb_desktop:/home/daksh/cognipilot/cranium/install/b3rb_rviz:/home/daksh/cognipilot/cranium/install/b3rb_nav2:/home/daksh/cognipilot/cranium/install/b3rb_gz_resource:/home/daksh/cognipilot/cranium/install/b3rb_gz_bringup:/home/daksh/cognipilot/cranium/install/b3rb_description:/home/daksh/cognipilot/electrode/install/electrode:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:aa52852f-1a6c-4bef-a599-6a9d05e29a51', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_EXPORT_COMPILE_COMMANDS': 'ON', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/daksh/ros2_dog/build/robot_dog', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/home/daksh/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/daksh/ros2_dog/build/robot_dog/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daksh/ros2_dog/install/robot_dog/lib/python3.10/site-packages:/home/daksh/cognipilot/cranium/install/corti/local/lib/python3.10/dist-packages:/home/daksh/cognipilot/cranium/build/b3rb_ros_line_follower:/home/daksh/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages:/home/daksh/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/daksh/cognipilot/cranium/install/synapse_ros:/home/daksh/cognipilot/cranium/install/synapse_gz:/home/daksh/cognipilot/cranium/install/synapse_tinyframe:/home/daksh/cognipilot/cranium/install/synapse_protobuf:/home/daksh/cognipilot/cranium/install/corti:/home/daksh/cognipilot/cranium/install/synapse_msgs:/home/daksh/cognipilot/cranium/install/dream_world:/home/daksh/cognipilot/cranium/install/cerebri_bringup:/home/daksh/cognipilot/cranium/install/b3rb_simulator:/home/daksh/cognipilot/cranium/install/b3rb_desktop:/home/daksh/cognipilot/cranium/install/b3rb_rviz:/home/daksh/cognipilot/cranium/install/b3rb_nav2:/home/daksh/cognipilot/cranium/install/b3rb_gz_resource:/home/daksh/cognipilot/cranium/install/b3rb_gz_bringup:/home/daksh/cognipilot/cranium/install/b3rb_description:/home/daksh/cognipilot/electrode/install/electrode'}, 'shell': False}
+[1.902767] (-) TimerEvent: {}
+[2.002950] (-) TimerEvent: {}
+[2.103122] (-) TimerEvent: {}
+[2.203307] (-) TimerEvent: {}
+[2.303459] (-) TimerEvent: {}
+[2.384705] (robot_dog) StdoutLine: {'line': b'running develop\n'}
+[2.403530] (-) TimerEvent: {}
+[2.503694] (-) TimerEvent: {}
+[2.603840] (-) TimerEvent: {}
+[2.703995] (-) TimerEvent: {}
+[2.724502] (robot_dog) StdoutLine: {'line': b'running egg_info\n'}
+[2.752843] (robot_dog) StdoutLine: {'line': b'creating robot_dog.egg-info\n'}
+[2.753071] (robot_dog) StdoutLine: {'line': b'writing robot_dog.egg-info/PKG-INFO\n'}
+[2.753925] (robot_dog) StdoutLine: {'line': b'writing dependency_links to robot_dog.egg-info/dependency_links.txt\n'}
+[2.754598] (robot_dog) StdoutLine: {'line': b'writing requirements to robot_dog.egg-info/requires.txt\n'}
+[2.754760] (robot_dog) StdoutLine: {'line': b'writing top-level names to robot_dog.egg-info/top_level.txt\n'}
+[2.754909] (robot_dog) StdoutLine: {'line': b"writing manifest file 'robot_dog.egg-info/SOURCES.txt'\n"}
+[2.804067] (-) TimerEvent: {}
+[2.814290] (robot_dog) StdoutLine: {'line': b"reading manifest file 'robot_dog.egg-info/SOURCES.txt'\n"}
+[2.815790] (robot_dog) StdoutLine: {'line': b"writing manifest file 'robot_dog.egg-info/SOURCES.txt'\n"}
+[2.904147] (-) TimerEvent: {}
+[2.931220] (robot_dog) StdoutLine: {'line': b'running build_ext\n'}
+[2.931352] (robot_dog) StdoutLine: {'line': b'Creating /home/daksh/ros2_dog/install/robot_dog/lib/python3.10/site-packages/robot-dog.egg-link (link to .)\n'}
+[2.932530] (robot_dog) StdoutLine: {'line': b'\n'}
+[2.932598] (robot_dog) StdoutLine: {'line': b'Installed /home/daksh/ros2_dog/build/robot_dog\n'}
+[2.932691] (robot_dog) StdoutLine: {'line': b'running symlink_data\n'}
+[2.932932] (robot_dog) StdoutLine: {'line': b'creating /home/daksh/ros2_dog/install/robot_dog/share/ament_index/resource_index/packages\n'}
+[2.933209] (robot_dog) StdoutLine: {'line': b'symbolically linking /home/daksh/ros2_dog/build/robot_dog/resource/robot_dog -> /home/daksh/ros2_dog/install/robot_dog/share/ament_index/resource_index/packages\n'}
+[2.933440] (robot_dog) StdoutLine: {'line': b'symbolically linking /home/daksh/ros2_dog/build/robot_dog/package.xml -> /home/daksh/ros2_dog/install/robot_dog/share/robot_dog\n'}
+[2.972897] (robot_dog) CommandEnded: {'returncode': 0}
+[2.985994] (robot_dog) JobEnded: {'identifier': 'robot_dog', 'rc': 0}
+[2.986587] (-) EventReactorShutdown: {}

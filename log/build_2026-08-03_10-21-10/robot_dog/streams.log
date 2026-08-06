@@ -1,0 +1,20 @@
+[1.840s] Invoking command in '/home/daksh/ros2_dog/build/robot_dog': PYTHONPATH=/home/daksh/ros2_dog/build/robot_dog/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daksh/ros2_dog/install/robot_dog/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/daksh/ros2_dog/build/robot_dog/build --no-deps symlink_data
+[2.384s] running develop
+[2.724s] running egg_info
+[2.752s] creating robot_dog.egg-info
+[2.752s] writing robot_dog.egg-info/PKG-INFO
+[2.753s] writing dependency_links to robot_dog.egg-info/dependency_links.txt
+[2.754s] writing requirements to robot_dog.egg-info/requires.txt
+[2.754s] writing top-level names to robot_dog.egg-info/top_level.txt
+[2.754s] writing manifest file 'robot_dog.egg-info/SOURCES.txt'
+[2.814s] reading manifest file 'robot_dog.egg-info/SOURCES.txt'
+[2.815s] writing manifest file 'robot_dog.egg-info/SOURCES.txt'
+[2.930s] running build_ext
+[2.931s] Creating /home/daksh/ros2_dog/install/robot_dog/lib/python3.10/site-packages/robot-dog.egg-link (link to .)
+[2.932s] 
+[2.932s] Installed /home/daksh/ros2_dog/build/robot_dog
+[2.932s] running symlink_data
+[2.932s] creating /home/daksh/ros2_dog/install/robot_dog/share/ament_index/resource_index/packages
+[2.932s] symbolically linking /home/daksh/ros2_dog/build/robot_dog/resource/robot_dog -> /home/daksh/ros2_dog/install/robot_dog/share/ament_index/resource_index/packages
+[2.933s] symbolically linking /home/daksh/ros2_dog/build/robot_dog/package.xml -> /home/daksh/ros2_dog/install/robot_dog/share/robot_dog
+[2.973s] Invoked command in '/home/daksh/ros2_dog/build/robot_dog' returned '0': PYTHONPATH=/home/daksh/ros2_dog/build/robot_dog/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daksh/ros2_dog/install/robot_dog/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/daksh/ros2_dog/build/robot_dog/build --no-deps symlink_data

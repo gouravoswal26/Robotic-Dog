@@ -1,0 +1,18 @@
+running develop
+running egg_info
+creating robot_dog.egg-info
+writing robot_dog.egg-info/PKG-INFO
+writing dependency_links to robot_dog.egg-info/dependency_links.txt
+writing requirements to robot_dog.egg-info/requires.txt
+writing top-level names to robot_dog.egg-info/top_level.txt
+writing manifest file 'robot_dog.egg-info/SOURCES.txt'
+reading manifest file 'robot_dog.egg-info/SOURCES.txt'
+writing manifest file 'robot_dog.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/daksh/ros2_dog/install/robot_dog/lib/python3.10/site-packages/robot-dog.egg-link (link to .)
+
+Installed /home/daksh/ros2_dog/build/robot_dog
+running symlink_data
+creating /home/daksh/ros2_dog/install/robot_dog/share/ament_index/resource_index/packages
+symbolically linking /home/daksh/ros2_dog/build/robot_dog/resource/robot_dog -> /home/daksh/ros2_dog/install/robot_dog/share/ament_index/resource_index/packages
+symbolically linking /home/daksh/ros2_dog/build/robot_dog/package.xml -> /home/daksh/ros2_dog/install/robot_dog/share/robot_dog

@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+resource/robot_dog
+robot_dog/__init__.py
+robot_dog.egg-info/PKG-INFO
+robot_dog.egg-info/SOURCES.txt
+robot_dog.egg-info/dependency_links.txt
+robot_dog.egg-info/requires.txt
+robot_dog.egg-info/top_level.txt
+robot_dog.egg-info/zip-safe
