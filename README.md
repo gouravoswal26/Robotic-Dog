@@ -1,14 +1,37 @@
-# 🐕 Robotic Dog
+# 🐕 Robotic Dog — 12-DOF Quadruped Robot
 
-A 12-DOF quadruped robot currently under active development.
+A custom-built **12-DOF quadruped robot** designed, CAD-modeled, 3D-printed, and assembled as an ongoing robotics development platform.
 
-The objective of this project is to design and build a modular quadruped robot capable of stable locomotion, balancing, and autonomous navigation. The current prototype focuses on mechanical design, electronics integration, hardware bring-up, and validating the platform using an ESP32. After the hardware and low-level software are fully tested, the project will migrate to an STM32-based controller for improved real-time performance and advanced control algorithms.
+The current prototype uses an **ESP32** for low-level hardware development and testing. The system is being developed toward stable quadrupedal locomotion, balance control, perception, and autonomous navigation, with a planned migration to **STM32** for the next-generation low-level controller.
 
-> **Project Status:** 🚧 Active Development
+> 🚧 **Project Status:** Active Development  
+> **Current Controller:** ESP32  
+> **Degrees of Freedom:** 12  
+> **Actuators:** 12 Servo Motors  
+> **Servo Driver:** PCA9685  
+> **Prototype:** 3D-Printed Quadruped
 
 ---
 
-# 📸 Current Prototype
+## 🎥 Prototype Demonstration
+
+> **Walking demonstration coming soon.**
+
+A short demonstration video will be added here once the robot achieves its first stable walking gait.
+
+<!--
+Replace the section above with a GIF/video thumbnail once available.
+
+Example:
+
+<p align="center">
+  <img src="Images/walking_demo.gif" width="700">
+</p>
+-->
+
+---
+
+## 📸 Current Prototype
 
 <p align="center">
   <img src="Images/front.jpeg" width="700">
@@ -21,190 +44,458 @@ The objective of this project is to design and build a modular quadruped robot c
 
 ---
 
-# 🎯 Project Objectives
+# 🤖 What Is This Project?
 
-- Design a lightweight and modular quadruped robot
-- Develop a stable 12-DOF mechanical platform
-- Integrate embedded electronics for motion control
-- Validate hardware using ESP32
-- Migrate to STM32 for real-time control
-- Implement walking gait generation
-- Develop self-balancing capabilities
-- Integrate environmental sensors
-- Build a foundation for autonomous navigation
+This project focuses on the development of a **12-DOF quadruped robot** from the mechanical structure up to the embedded control system.
+
+The robot is being developed as a modular platform where the mechanical, electronic, sensing, and control systems can be independently tested and progressively integrated.
+
+The current development strategy is:
+
+```text
+Mechanical Design
+       ↓
+3D Printed Prototype
+       ↓
+Electronics Integration
+       ↓
+Hardware Bring-up
+       ↓
+Servo Calibration
+       ↓
+Standing Posture
+       ↓
+Walking Gait
+       ↓
+Balance Control
+       ↓
+Sensor Fusion
+       ↓
+Autonomous Navigation
+```
 
 ---
 
-# 📋 Current Hardware
+# 🔢 Key Specifications
 
-| Component | Current Status |
-|------------|----------------|
-| 12-DOF Mechanical Design | ✅ Completed |
-| 3D Printed Prototype | ✅ Completed |
-| Servo Installation | ✅ Completed |
-| ESP32 Development Board | ✅ In Use |
-| STM32 Controller | ⏳ Planned |
-| PCA9685 Servo Driver | ✅ Installed |
-| MPU6500 IMU | 🚧 Initial Testing |
-| VL53L0X ToF Sensors | ⏳ Planned Integration |
-| HC-SR04 Ultrasonic Sensors | ⏳ Planned Integration |
-| FSR Foot Sensors | ⏳ Planned Integration |
-| ACS758 Current Sensors | ⏳ Planned Integration |
-| 3S LiPo Battery | ✅ Selected |
+| Parameter | Current Specification |
+|-----------|-----------------------|
+| Robot Type | Quadruped |
+| Degrees of Freedom | 12 |
+| Actuators | 12 Servo Motors |
+| Current Controller | ESP32 |
+| Planned Controller | STM32 |
+| Servo Driver | PCA9685 |
+| IMU | MPU6500 |
+| ToF Sensors | VL53L0X ×2 |
+| Ultrasonic Sensors | HC-SR04 ×2 |
+| Foot Contact Sensors | FSR ×4 |
+| Current Sensors | ACS758 |
+| Battery | 3S LiPo |
+| Manufacturing | 3D Printing |
+| Primary CAD | Autodesk Fusion 360 |
+
+> **Note:** Specifications will be updated as the hardware is finalized and experimentally characterized.
 
 ---
 
-# 🚀 Current Development Progress
+# ⚙️ System Architecture
 
-| Task | Status |
-|------|--------|
-| Mechanical Design | ✅ |
-| CAD Assembly | ✅ |
-| 3D Printing | ✅ |
-| Robot Assembly | ✅ |
-| Electronics Installation | ✅ |
-| ESP32 Hardware Bring-up | 🚧 |
+The robot is being developed using a modular hardware architecture.
+
+```text
+                    ┌──────────────────────┐
+                    │      ESP32           │
+                    │  Low-Level Control   │
+                    └──────────┬───────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             │                 │                 │
+             ▼                 ▼                 ▼
+       ┌───────────┐     ┌───────────┐     ┌───────────┐
+       │ PCA9685   │     │ MPU6500   │     │ Sensors   │
+       │ Servo     │     │ IMU       │     │ & Power   │
+       │ Driver    │     └───────────┘     └───────────┘
+       └─────┬─────┘
+             │
+             ▼
+       ┌──────────────┐
+       │ 12 Servos    │
+       │ 12-DOF Legs  │
+       └──────────────┘
+```
+
+The architecture will evolve as higher-level perception and control systems are integrated.
+
+---
+
+# 🦿 Mechanical Design & Analysis
+
+The mechanical system was designed as a **12-DOF quadruped platform**, with three actuated joints per leg.
+
+### Leg Configuration
+
+Each leg consists of:
+
+- Hip joint
+- Knee joint
+- Ankle joint
+
+```text
+             BODY
+              │
+          ┌───┴───┐
+          │       │
+        HIP     HIP
+          │       │
+        KNEE    KNEE
+          │       │
+       ANKLE    ANKLE
+          │       │
+         FOOT    FOOT
+```
+
+The design was developed with emphasis on:
+
+- Modular assembly
+- 3D-printable components
+- Servo accessibility
+- Compact mechanical structure
+- Replaceable components
+- Ease of future modification
+
+### CAD
+
+The complete CAD assembly is available in:
+
+```text
+CAD/
+└── ROBOTIC DOG.step
+```
+
+The STEP assembly can be imported into CAD software such as Fusion 360, SolidWorks, or FreeCAD for inspection and further development.
+
+---
+
+## 📐 Mechanical Analysis
+
+The mechanical design will be progressively characterized using measured and calculated engineering parameters.
+
+### Torque Budget
+
+The required joint torque depends on:
+
+- Robot mass
+- Payload
+- Link lengths
+- Center of mass
+- Joint configuration
+- Dynamic acceleration
+
+The torque budget will be calculated for each joint before finalizing the walking gait.
+
+| Joint | Required Torque | Servo Torque | Margin |
+|-------|-----------------|--------------|--------|
+| Hip | TBD | TBD | TBD |
+| Knee | TBD | TBD | TBD |
+| Ankle | TBD | TBD | TBD |
+
+> Values will be added after the robot mass, link geometry, and servo specifications are experimentally verified.
+
+---
+
+## ⚖️ Mass Properties
+
+The final mechanical mass will be measured after assembly.
+
+| Parameter | Value |
+|-----------|-------|
+| Printed Structure | TBD |
+| Electronics | TBD |
+| Servos | TBD |
+| Battery | TBD |
+| Total Robot Mass | TBD |
+
+These values will later be used to validate the torque calculations and locomotion requirements.
+
+---
+
+## 🧪 Structural / FEA Analysis
+
+Finite Element Analysis will be used to identify mechanically critical components and improve the design.
+
+Planned analysis includes:
+
+- Static loading
+- Joint mounting stress
+- Leg deformation
+- Factor of safety
+- Critical component identification
+
+FEA results will be added to the repository as the mechanical design is finalized.
+
+---
+
+## 📏 Tolerance & Manufacturing Notes
+
+The robot is manufactured using 3D printing, so dimensional tolerances are important for:
+
+- Servo mounting
+- Bearing interfaces
+- Screw holes
+- Joint alignment
+- Press-fit components
+- Interlocking parts
+
+Print-specific tolerances and design revisions will be documented as the prototype is iterated.
+
+---
+
+# 💰 Bill of Materials
+
+The project BOM will be updated with actual purchase prices as the hardware inventory is finalized.
+
+| Component | Quantity | Cost |
+|-----------|----------|------|
+| Servo Motors | 12 | TBD |
+| ESP32 | 1 | TBD |
+| PCA9685 | 1 | TBD |
+| MPU6500 | 2 | TBD |
+| VL53L0X | 2 | TBD |
+| HC-SR04 | 2 | TBD |
+| FSR | 4 | TBD |
+| ACS758 | 3 | TBD |
+| Battery | 1 | TBD |
+| Buck Converters | 3 | TBD |
+| 3D Printing Material | — | TBD |
+| **Total** | — | **TBD** |
+
+> The final BOM cost will be reported after all component prices and manufacturing costs are consolidated.
+
+---
+
+# 💻 Firmware
+
+The current firmware development is based on the ESP32.
+
+The code is organized around individual hardware bring-up tests before integrating the complete robot controller.
+
+```text
+Code/
+└── ESP32/
+    └── Hardware_Bringup/
+        ├── FSR/
+        ├── Hardware_Bringup/
+        ├── MPU6500/
+        ├── OLED/
+        ├── PCA9685/
+        ├── Power_System/
+        ├── Servo_Test/
+        └── Ultrasonic/
+```
+
+Current development focuses on validating each hardware subsystem independently.
+
+---
+
+# 🔌 Hardware Bring-up
+
+The current bring-up process includes testing:
+
+- ESP32
+- PCA9685
+- Servo motors
+- MPU6500
+- OLED display
+- FSR sensors
+- Ultrasonic sensors
+- Battery voltage monitoring
+- Current monitoring
+
+The individual test programs are available inside:
+
+```text
+Code/ESP32/Hardware_Bringup/
+```
+
+---
+
+# 📊 Current Development Progress
+
+| Development Stage | Status |
+|--------------------|--------|
+| Mechanical CAD | ✅ |
+| 3D Printed Prototype | ✅ |
+| Mechanical Assembly | ✅ |
+| Servo Installation | ✅ |
+| ESP32 Bring-up | 🚧 |
+| Sensor Testing | 🚧 |
 | Servo Calibration | 🚧 |
-| IMU Integration | ⏳ |
 | Standing Posture | ⏳ |
 | Walking Gait | ⏳ |
 | Balance Controller | ⏳ |
+| Sensor Fusion | ⏳ |
 | STM32 Migration | ⏳ |
-
----
-
-# 📁 Repository Contents
-
-## CAD
-
-Contains the complete 3D CAD model of the robotic dog, including the STEP assembly used for manufacturing and future modifications.
-
-## Code
-
-Contains the source code used during hardware bring-up and embedded software development.
-
-> **Current Status:** Initial ESP32 development and hardware testing.
-
-## Circuit Diagrams
-
-Contains electrical schematics and wiring diagrams used during hardware development.
-
-## Documentation
-
-Contains project reports, design notes, and technical documentation.
-
-## Images
-
-Contains photographs documenting the development of the robot prototype.
-
-## Videos
-
-This folder will contain demonstrations of the robot during future development milestones.
-
-## Datasheets
-
-This folder will contain datasheets for all major electronic components used in the project.
-
----
-
-# ⚙️ Current Development Focus
-
-The current phase of the project is focused on validating the hardware platform.
-
-Current work includes:
-
-- Hardware bring-up
-- Servo testing and calibration
-- I²C communication
-- Power distribution testing
-- Initial IMU testing
-- Mechanical refinement
-
-Higher-level software such as inverse kinematics, walking gait generation, and balancing will be developed after the hardware platform has been fully validated.
-
----
-
-# 🛠️ Software & Tools
-
-### Mechanical Design
-
-- Autodesk Fusion 360
-
-### Embedded Development
-
-- Arduino IDE
-- ESP32
-- C++
-
-### Manufacturing
-
-- Bambu Lab A1
-- PLA Filament
+| Autonomous Navigation | ⏳ |
 
 ---
 
 # 🗺️ Development Roadmap
 
-## Phase 1 — Mechanical Development
+### Phase 1 — Mechanical Platform
+- ✅ CAD design
+- ✅ 3D printing
+- ✅ Mechanical assembly
+- 🚧 Mechanical optimization
 
-- ✅ Mechanical Design
-- ✅ CAD Assembly
-- ✅ 3D Printing
-- ✅ Prototype Assembly
+### Phase 2 — Electronics
+- 🚧 ESP32 bring-up
+- 🚧 Servo testing
+- 🚧 Sensor testing
+- 🚧 Power monitoring
 
-## Phase 2 — Electronics
+### Phase 3 — Locomotion
+- ⏳ Servo calibration
+- ⏳ Standing posture
+- ⏳ Weight shifting
+- ⏳ Basic gait
+- ⏳ Forward walking
+- ⏳ Turning
 
-- 🚧 ESP32 Integration
-- 🚧 Servo Driver Testing
-- 🚧 Power System Validation
-- 🚧 Sensor Testing
+### Phase 4 — Stability
+- ⏳ IMU integration
+- ⏳ Orientation estimation
+- ⏳ Balance controller
+- ⏳ Sensor fusion
 
-## Phase 3 — Motion Control
+### Phase 5 — Controller Upgrade
+- ⏳ STM32 migration
+- ⏳ Real-time control optimization
 
-- ⏳ Servo Calibration
-- ⏳ Standing Posture
-- ⏳ Walking Gait
-
-## Phase 4 — Control System
-
-- ⏳ IMU Integration
-- ⏳ Balance Controller
-- ⏳ Sensor Fusion
-
-## Phase 5 — Platform Upgrade
-
-- ⏳ STM32 Migration
-- ⏳ Software Optimization
-
-## Phase 6 — Autonomous Features
-
-- ⏳ Obstacle Detection
-- ⏳ Terrain Adaptation
-- ⏳ Autonomous Navigation
-
----
-
-# 📈 Project Timeline
-
-This repository documents the complete engineering journey of the robotic dog, from initial CAD design and hardware prototyping to embedded software development and autonomous locomotion.
-
-Each development milestone will be committed and documented as the project progresses.
+### Phase 6 — Autonomy
+- ⏳ Obstacle detection
+- ⏳ Terrain adaptation
+- ⏳ Perception
+- ⏳ Autonomous navigation
 
 ---
 
-# 🤝 Contributions
+# 📈 Performance Metrics
 
-Suggestions, discussions, and constructive feedback are always welcome.
+Once the robot reaches stable locomotion, the following parameters will be experimentally measured:
 
-If you have ideas that could improve the mechanical design, embedded software, or overall system architecture, feel free to open an issue or submit a pull request.
+| Metric | Value |
+|--------|-------|
+| Total Mass | TBD |
+| Walking Speed | TBD |
+| Battery Runtime | TBD |
+| Maximum Payload | TBD |
+| Joint Torque | TBD |
+| Power Consumption | TBD |
+| Walking Efficiency | TBD |
+
+The goal is to replace all `TBD` values with experimentally measured results.
+
+---
+
+# 📁 Repository Structure
+
+```text
+Robotic-Dog/
+│
+├── CAD/
+│   ├── ROBOTIC DOG.step
+│   └── README.md
+│
+├── Circuit_Diagrams/
+│   ├── Diagram.png
+│   └── README.md
+│
+├── Code/
+│   └── ESP32/
+│       ├── Hardware_Bringup/
+│       │   ├── FSR/
+│       │   ├── Hardware_Bringup/
+│       │   ├── MPU6500/
+│       │   ├── OLED/
+│       │   ├── PCA9685/
+│       │   ├── Power_System/
+│       │   ├── Servo_Test/
+│       │   └── Ultrasonic/
+│       └── README.md
+│
+├── Documentation/
+│
+├── Images/
+│
+├── Videos/
+│
+└── README.md
+```
+
+---
+
+# 🔬 Engineering Development Philosophy
+
+This project follows an incremental hardware-first development approach.
+
+Each subsystem is tested independently before being integrated into the complete robotic platform.
+
+```text
+Component Test
+      ↓
+Subsystem Validation
+      ↓
+Integration
+      ↓
+Calibration
+      ↓
+Motion Control
+      ↓
+System Validation
+```
+
+This approach helps isolate hardware and software problems before introducing higher-level locomotion algorithms.
+
+---
+
+# 🚧 Current Limitations
+
+The robot is still under active development.
+
+At the current stage:
+
+- Stable walking has not yet been finalized.
+- Walking speed and battery life have not yet been experimentally measured.
+- Final torque margins are still being calculated.
+- FEA analysis is planned for mechanically critical components.
+- The STM32 controller migration has not yet been completed.
+
+These values and features will be updated as they are experimentally validated.
+
+---
+
+# 🔮 Future Work
+
+Future development will focus on:
+
+- Stable quadrupedal walking
+- Dynamic balance
+- Sensor fusion
+- Terrain adaptation
+- Computer vision
+- LiDAR integration
+- Autonomous navigation
+- STM32-based real-time control
+- Higher-level robotic intelligence
 
 ---
 
 # 📜 License
 
-This project will be released under the **MIT License**.
+This project will be released under the MIT License.
 
-> **Note:** The LICENSE file will be added to the repository before the first stable release.
+The `LICENSE` file will be added to the repository as the project is prepared for public reuse.
 
 ---
 
@@ -214,13 +505,15 @@ This project will be released under the **MIT License**.
 
 Electronics & Communication Engineering
 
-Interests:
+Interested in:
+
 - Robotics
 - Embedded Systems
+- Autonomous Systems
 - Computer Vision
 - 3D Printing
-- Autonomous Robots
+- Robot Control
 
 ---
 
-⭐ **If you find this project interesting, consider giving it a star and following its development.**
+⭐ If you find the project interesting, consider starring the repository and following its development.
