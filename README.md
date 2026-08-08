@@ -182,11 +182,86 @@ The STEP assembly can be imported into CAD software such as Fusion 360, SolidWor
 
 ---
 
-## 📐 Mechanical Analysis
+## 📦 Available Files
 
-The mechanical design will be progressively characterized using measured and calculated engineering parameters.
+### Complete Assembly
 
+- `ROBOTIC DOG.step` — Complete CAD assembly of the robotic dog.
 
+### Printable Components
+
+The folder also contains individual STL files exported from the CAD assembly for 3D printing.
+
+These files represent the current prototype components and may change as the mechanical design is revised.
+
+---
+
+## 🖨️ 3D Printing
+
+The STL files are intended for additive manufacturing and prototype fabrication.
+
+Printing parameters may vary depending on:
+
+- Printer
+- Nozzle diameter
+- Layer height
+- Infill
+- Material
+- Part orientation
+- Structural requirements
+
+Recommended printing parameters will be documented as the design is validated.
+
+---
+
+## 🔧 Mechanical Design
+
+The robot is designed as a modular 12-DOF quadruped platform.
+
+The mechanical design focuses on:
+
+- Modular leg assemblies
+- Servo accessibility
+- Replaceable structural components
+- 3D-printable geometry
+- Compact packaging
+- Ease of assembly and maintenance
+
+---
+
+## 📐 Design Analysis
+
+Mechanical analysis is currently under development.
+
+Planned analysis includes:
+
+- Joint torque requirements
+- Servo torque margin
+- Robot mass
+- Center of mass
+- Structural loading
+- FEA of critical components
+- Manufacturing tolerances
+
+Measured and calculated results will be added as the prototype is experimentally validated.
+
+---
+
+## 🔄 Design Status
+
+The CAD model represents the current physical prototype.
+
+The design is **not considered final** and may change based on:
+
+- Servo performance
+- Structural testing
+- Walking experiments
+- Weight distribution
+- Mechanical failures
+- Manufacturing tolerances
+- Electronics integration
+
+Future revisions will be documented through Git commits and updated CAD/STL files.
 
 ## 🧪 Structural / FEA Analysis
 
