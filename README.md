@@ -43,6 +43,11 @@ Example:
 </p>
 
 ---
+## 🎥 Walking Demonstration
+
+First physical locomotion test of the 12-DOF quadruped prototype.
+
+[▶️ Watch the Walking Test](Videos/Robotic_Dog_Walking_Test_01.mp4)
 
 # 🤖 What Is This Project?
 
