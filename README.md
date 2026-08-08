@@ -483,25 +483,6 @@ Higher-level control algorithms will be added as the lower-level hardware and mo
 
 ---
 
-# 📈 Performance Metrics
-
-The following metrics will be experimentally measured as the robot reaches a more repeatable locomotion state.
-
-| Metric | Value |
-|--------|-------|
-| Total Mass | TBD |
-| Walking Speed | TBD |
-| Battery Runtime | TBD |
-| Maximum Payload | TBD |
-| Joint Torque | TBD |
-| Average Power Consumption | TBD |
-| Peak Current | TBD |
-| Walking Efficiency | TBD |
-
-The values will be updated using measured experimental results rather than estimates.
-
----
-
 # 🧪 Experimental Validation
 
 Future testing will include:
