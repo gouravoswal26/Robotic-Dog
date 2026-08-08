@@ -47,7 +47,7 @@ Example:
 
 First physical locomotion test of the 12-DOF quadruped prototype.
 
-[▶️ Watch the Walking Test](Videos/Robotic_Dog_Walking_Test_01.mp4)
+[▶️ Watch the Walking Test](Videos/Robotic_Dog_Walking_Test_1.gif)
 
 # 🤖 What Is This Project?
 
