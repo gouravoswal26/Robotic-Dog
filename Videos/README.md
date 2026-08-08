@@ -6,7 +6,7 @@ This folder contains demonstration and testing videos documenting the developmen
 
 ### Walking Test
 
-**Robotic_Dog_Walking_Test_01.mp4**
+**Videos/Robotic_Dog_Walking_Test_1.gif**
 
 First walking experiment of the 12-DOF quadruped prototype.
 
