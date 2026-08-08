@@ -181,44 +181,7 @@ The STEP assembly can be imported into CAD software such as Fusion 360, SolidWor
 
 The mechanical design will be progressively characterized using measured and calculated engineering parameters.
 
-### Torque Budget
 
-The required joint torque depends on:
-
-- Robot mass
-- Payload
-- Link lengths
-- Center of mass
-- Joint configuration
-- Dynamic acceleration
-
-The torque budget will be calculated for each joint before finalizing the walking gait.
-
-| Joint | Required Torque | Servo Torque | Margin |
-|-------|-----------------|--------------|--------|
-| Hip | TBD | TBD | TBD |
-| Knee | TBD | TBD | TBD |
-| Ankle | TBD | TBD | TBD |
-
-> Values will be added after the robot mass, link geometry, and servo specifications are experimentally verified.
-
----
-
-## ⚖️ Mass Properties
-
-The final mechanical mass will be measured after assembly.
-
-| Parameter | Value |
-|-----------|-------|
-| Printed Structure | TBD |
-| Electronics | TBD |
-| Servos | TBD |
-| Battery | TBD |
-| Total Robot Mass | TBD |
-
-These values will later be used to validate the torque calculations and locomotion requirements.
-
----
 
 ## 🧪 Structural / FEA Analysis
 
