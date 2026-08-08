@@ -257,18 +257,18 @@ The project BOM will be updated with actual purchase prices as the hardware inve
 
 | Component | Quantity | Cost |
 |-----------|----------|------|
-| Servo Motors | 12 | TBD |
-| ESP32 | 1 | TBD |
-| PCA9685 | 1 | TBD |
-| MPU6500 | 2 | TBD |
-| VL53L0X | 2 | TBD |
-| HC-SR04 | 2 | TBD |
-| FSR | 4 | TBD |
-| ACS758 | 3 | TBD |
-| Battery | 1 | TBD |
-| Buck Converters | 3 | TBD |
-| 3D Printing Material | — | TBD |
-| **Total** | — | **TBD** |
+| Servo Motors | 12 | 2400 |
+| ESP32 | 1 | 300 |
+| PCA9685 | 1 | 250 |
+| MPU6500 | 2 | 270 |
+| VL53L0X | 2 | 130 |
+| HC-SR04 | 2 | 140 |
+| FSR | 4 | 1000 |
+| ACS758 | 3 | 210 |
+| Battery | 1 | 2100 |
+| Buck Converters | 3 | 700 |
+| 3D Printing Material | — | 900 |
+| **Total** | — | **6300** |
 
 > The final BOM cost will be reported after all component prices and manufacturing costs are consolidated.
 
